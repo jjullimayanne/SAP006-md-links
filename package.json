@@ -7,14 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "tran": "./bin/index.js"  
+    "tran": "./index.js",
+    "teste": "./bin/teste.js",
+    "md-links": "./cli.js"
   },
-  "keywords": [  
-    "cli"  
-       ],
-  "dependences": {
-    "marked": "^3.0.7"
-  },
+  "keywords": [
+    "cli"
+  ],
   "author": "Julli Mayanne",
   "license": "ISC",
   "dependencies": {
