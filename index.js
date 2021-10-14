@@ -1,10 +1,9 @@
 const chalk = require('chalk')
 const fs = require('fs')
 
-console.log(chalk.blue("oioi"))
+console.log(chalk.blue("index"))
 
 ///fs.readFile(file, [encoding], [callback]);
-
 
 function pegaArquivo (caminhoArquivo) {
     const encoding = 'utf-8'
@@ -14,4 +13,4 @@ function pegaArquivo (caminhoArquivo) {
 
 }
 
-pegaArquivo(".arquivos/teste.md")
+pegaArquivo("./arquivos/teste.md")
