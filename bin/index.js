@@ -8,6 +8,15 @@ function trataErro(erro) {
     throw new Error(chalk.red(erro.code, 'Não há arquivo no caminho'));
 }
 
+function pegaArquivo(caminhoArquivo) {
+    const encoding = 'utf-8'
+    fs.promises.readFile(caminhoArquivo, encoding)
+    .then((texto) => console.log(texto))
+    .catch((erro) => trataErro(erro))
+
+}
+
+/*
 function pegaArquivo (caminhoArquivo) {
     const encoding = 'utf-8'
     fs.readFile(caminhoArquivo, encoding, (erro, texto) => {
@@ -18,5 +27,7 @@ function pegaArquivo (caminhoArquivo) {
     })
 
 }
+
+*/
 
 pegaArquivo("./SAP006-md-links/arquivos/teste.md")
