@@ -1,10 +1,9 @@
 const chalk = require('chalk')
 const fs = require('fs')
 
-console.log(chalk.blue("bin"))
+console.log(chalk.blue("taaaau"))
 
-
-const texto = '[Node.js](https://nodejs.org/pt-br/) é um ambiente de [Node.js](https://nodejs.org/pt-br/) é um ambiente de execução para JavaScript construído com o [motor de JavaScript V8 do '
+//const texto = '[Node.js](https://nodejs.org/pt-br/) é um ambiente de [Node.js](https://nodejs.org/pt-br/) é um ambiente de execução para JavaScript construído com o [motor de JavaScript V8 do '
 function extraiLinkds(texto) {
     const regex =  /\[([^\]]*)\]\((https?:\/\/[^*$#\s].[^\s]*)\)/gm;
     const arrayResultados = [];
@@ -18,12 +17,10 @@ function extraiLinkds(texto) {
      return arrayResultados
 }
 
-
 ///fs.readFile(file, [encoding], [callback]);
 function trataErro(erro) {
     throw new Error(chalk.red(erro.code, 'Não há arquivo no caminho'));
 }
-
 async function pegaArquivo(caminhoArquivo) {
     const encoding = 'utf-8';
     try {
@@ -35,7 +32,9 @@ async function pegaArquivo(caminhoArquivo) {
     }
 
 }
-pegaArquivo("./SAP006-md-links/arquivos/teste.md")
+//pegaArquivo("./SAP006-md-links/arquivos/teste.md")
+
+module.exports = pegaArquivo;
 
 /*
 function trataErro(erro) {

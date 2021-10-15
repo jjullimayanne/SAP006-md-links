@@ -8,8 +8,9 @@
   },
   "bin": {
     "tran": "./index.js",
-    "teste": "./bin/teste.js",
-    "md-links": "./cli.js"
+    "teste": "./teste.js",
+    "md-links": "./cli.js",
+    "traan": "./tau.js"
   },
   "keywords": [
     "cli"
