@@ -14,7 +14,7 @@ function extraiLinkds(texto) {
 
     }
     //exec met de regex
-     return arrayResultados
+     return arrayResultados.length === 0 ? 'Não há links' : arrayResultados
 }
 
 ///fs.readFile(file, [encoding], [callback]);
@@ -25,7 +25,7 @@ async function pegaArquivo(caminhoArquivo) {
     const encoding = 'utf-8';
     try {
         const texto = await fs.promises.readFile(caminhoArquivo, encoding)
-        console.log(extraiLinkds(texto))
+        return (extraiLinkds(texto))
 
     } catch(erro) {
         trataErro(erro);
