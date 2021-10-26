@@ -1,4 +1,5 @@
-const chalk = require('chalk')
+import chalk from 'chalk'
+
 const fs = require('fs')
 
 console.log(chalk.blue("index"))

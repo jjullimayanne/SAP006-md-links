@@ -1,7 +1,6 @@
-const chalk = require('chalk')
-const fs = require('fs')
-
-console.log(chalk.blue("taaaau"))
+import chalk from 'chalk'
+import fs from 'fs'
+//const fs = require('fs')
 
 //const texto = '[Node.js](https://nodejs.org/pt-br/) é um ambiente de [Node.js](https://nodejs.org/pt-br/) é um ambiente de execução para JavaScript construído com o [motor de JavaScript V8 do '
 function extraiLinkds(texto) {
@@ -34,7 +33,8 @@ async function pegaArquivo(caminhoArquivo) {
 }
 //pegaArquivo("./SAP006-md-links/arquivos/teste.md")
 
-module.exports = pegaArquivo;
+///module.exports = pegaArquivo;
+export default pegaArquivo
 
 /*
 function trataErro(erro) {
