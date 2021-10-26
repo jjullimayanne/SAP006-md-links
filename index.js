@@ -1,6 +1,6 @@
-import chalk from 'chalk'
-
-const fs = require('fs')
+import chalk from'chalk'
+import fs from 'fs'
+//const fs = require('fs')
 
 console.log(chalk.blue("index"))
 
@@ -14,4 +14,4 @@ function pegaArquivo (caminhoArquivo) {
 
 }
 
-pegaArquivo("./arquivos/teste.md")
+pegaArquivo()

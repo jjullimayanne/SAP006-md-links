@@ -6,7 +6,7 @@
     "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cli": "node cli.js ./arquivos/teste.md"
+    "cli": "node cli.js"
   },
   "bin": {
     "tran": "./index.js",
